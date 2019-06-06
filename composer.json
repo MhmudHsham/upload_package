@@ -1,0 +1,43 @@
+{
+    "name": "mhmudhsham/upload_package",
+    "description": ":description",
+    "license": "license",
+    "authors": [
+        {
+            "name": "author name",
+            "email": "author email",
+            "homepage": "author homepage"
+        }
+    ],
+    "homepage": "https://github.com/mhmudhsham/upload_package",
+    "keywords": ["Laravel", "upload_package"],
+    "require": {
+        "illuminate/support": "~5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "mhmudhsham\\upload_package\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "mhmudhsham\\upload_package\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "mhmudhsham\\upload_package\\upload_packageServiceProvider"
+            ],
+            "aliases": {
+                "upload_package": "mhmudhsham\\upload_package\\Facades\\upload_package"
+            }
+        }
+    }
+}
